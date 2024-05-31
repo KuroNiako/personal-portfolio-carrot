@@ -55,7 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                    <span className="tagline">大家好，我是来自青云一部的金林</span>
+                    <span className="tagline">我是CARROTS，一个前端开发者</span>
                     <h1>{`我是`} <span className="txt-rotate" dataPeriod="1000"
                                         data-rotate='[ "前端开发", "网页设计", "后端开发" ]'><span
                         className="wrap">{text}</span></span></h1>

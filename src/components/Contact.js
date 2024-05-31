@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("发不出去的...");
+    setButtonText("唉，你按了，等下就报错了...");
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {

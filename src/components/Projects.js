@@ -3,15 +3,21 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import hobbyImg1 from "../assets/img/hobby-img1.png";
 import hobbyImg2 from "../assets/img/hobby-img2.png";
 import hobbyImg3 from "../assets/img/hobby-img3.png";
-import lifeImg1 from "../assets/img/life-img1.png";
-import lifeImg2 from "../assets/img/life-img2.png";
-import lifeImg3 from "../assets/img/life-img3.png";
+import hobbyImg4 from "../assets/img/hobby-img4.png";
+import hobbyImg5 from "../assets/img/hobby-img5.png";
+import hobbyImg6 from "../assets/img/hobby-img6.png";
+import lifeImg1 from "../assets/img/life-img1.jpg";
+import lifeImg2 from "../assets/img/life-img2.jpg";
+import lifeImg3 from "../assets/img/life-img3.jpg";
 import lifeImg4 from "../assets/img/life-img4.png";
 import lifeImg5 from "../assets/img/life-img5.png";
-import lifeImg6 from "../assets/img/life-img6.png";
+import lifeImg6 from "../assets/img/life-img6.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -38,6 +44,21 @@ export const Projects = () => {
       description: "基于Vue3 + Vite + Vuetify 开发与前后端联调",
       imgUrl: projImg3,
     },
+    {
+      title: "《极音 电子音乐节（假定）》海报",
+      description: "PS 图像处理课程结课作品",
+      imgUrl: projImg4,
+    },
+    {
+      title: "视频封面其一",
+      description: "用于 Bilibili 投稿",
+      imgUrl: projImg5,
+    },
+    {
+      title: "视频封面其二",
+      description: "用于 Bilibili 投稿",
+      imgUrl: projImg6,
+    },
   ];
 
   // const hobbiesImg = [{src: hobbyImg1}, {src: hobbyImg2}, {src: hobbyImg3}];
@@ -45,12 +66,12 @@ export const Projects = () => {
   const hobbies = [
     {
       title: "音律炫动",
-      description: "Sound Voltex Exceed Gear",
+      description: "最近在玩",
       imgUrl: hobbyImg1,
     },
     {
       title: "中二节奏",
-      description: "Chunithm Luminous",
+      description: "好久不玩",
       imgUrl: hobbyImg2,
     },
     {
@@ -58,22 +79,37 @@ export const Projects = () => {
       description: "还没发售但是想要",
       imgUrl: hobbyImg3,
     },
+    {
+      title: "世界计划 缤纷舞台！ feat.初音未来",
+      description: "对，节奏大师",
+      imgUrl: hobbyImg4,
+    },
+    {
+      title: "女神异闻录 3 Reload",
+      description: "没时间玩",
+      imgUrl: hobbyImg5,
+    },
+    {
+      title: "女神异闻录 5 Royal",
+      description: "堂堂通关（大半年前）",
+      imgUrl: hobbyImg6,
+    },
   ];
 
   const lifes = [
     {
-      title: "部门团建其一",
-      description: "纸杯奶油蛋糕",
+      title: "酉阳之旅其一",
+      description: "桃花园中的小小学堂",
       imgUrl: lifeImg1,
     },
     {
-      title: "部门团建其二",
-      description: "寿星分食蛋糕",
+      title: "酉阳之旅其二",
+      description: "酉阳古镇庭院",
       imgUrl: lifeImg2,
     },
     {
-      title: "部门团建其三",
-      description: "浩然激情献唱",
+      title: "酉阳之旅其三",
+      description: "太古洞钟乳石奇观",
       imgUrl: lifeImg3,
     },
     {
@@ -87,8 +123,8 @@ export const Projects = () => {
       imgUrl: lifeImg5,
     },
     {
-      title: "清明团建",
-      description: "六部成员搓麻",
+      title: "朋友们的聚餐",
+      description: "菠萝咕咾肉（?）",
       imgUrl: lifeImg6,
     },
   ];
@@ -120,7 +156,7 @@ export const Projects = () => {
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <p>
-                        在大学学习编程途中，开发的一些比较精美的项目
+                        在大学学习途中，开发 / 设计的一些比较精美的项目
                       </p>
                       <Row>
                         {
